@@ -9,7 +9,7 @@ function mayuscula(nombre) {
   
 }
 
-function invocarCallback(cb) {
+function invocarCallback(cb) {npm
   // Invoca al callback `cb`
   //Tu código:
   cb ();
@@ -58,13 +58,9 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  var nuevoArray = [];
-  for(let i = 0; i<array.length; i++) {
-    if(array[i][0] === "a") {
-      nuevoArray.push(array[i])
-    }
-  }
-  return nuevoArray;
+  return array.filter(function(ele){
+    return ele[0] === "a";
+  })
 }
 
 // No modificar nada debajo de esta línea
